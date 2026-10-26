@@ -1,0 +1,33 @@
+figure {
+  background-color: grey;
+  padding: 10px;
+  min-height: 100px;
+  display: block;
+  animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: lightgrey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+figure img,
+figure figcaption {
+  width: 100%;
+  min-height: 100%;
+
+  display: none;
+}
+figure.loaded {
+  animation: none;
+  img {
+    display: block;
+  }
+  figcaption {
+    display: block;
+  }
+}
